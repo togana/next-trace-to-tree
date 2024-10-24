@@ -1,14 +1,15 @@
 {
   "name": "next-trace-to-tree",
   "private": true,
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "next.js の trace-to-tree を使えるようにまとめた",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "check": "node ./scripts/trace-to-tree.mjs trace | tee output.txt"
   },
-  "packageManager": "pnpm@9.12.1",
   "dependencies": {
-    "event-stream": "^4.0.1"
+    "event-stream": "4.0.1"
+  },
+  "packageManager": "pnpm@9.12.2",
+  "engines": {
+    "node": "20.x"
   }
 }
